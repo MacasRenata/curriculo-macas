@@ -2,42 +2,16 @@
 <html>
   <head>
     <title><%= title %></title>
+    <link rel="stylesheet" href="/styles/main.css" />
   </head>
   <body>
     <main>
       <h1><%= title %></h1>
       <p>Bem vindo(a) ao <strong><%= title %></strong></p>
-   
-      <p><%= profession %></p>
-      <p><%= description %></p>
-      <ul>
-      <% experience.map(experience => { %>
-          <li>
-              <div>
-                  <strong><%= experience.company %>:</strong>
-                  <strong><%= experience.office %></strong>
-                  <br>
-                  <span><%= experience.description %></span>
-              </div>
-          </li>
-      <% }); %>
-      </ul>
-      <ul>
-      <% education.map(education => { %>
-          <li>
-              <div>
-                  <strong><%= education.institution %></strong>
-                  <br>
-                  <span><%= education.description %></span>
-              </div>
-          </li>
-      <% }); %>
-      </ul>
-      <ul>
-      <% skills.map(skill => { %>
-          <li><%= skill %></li>
-      <% }); %>
-      </ul>
+      <a href="/curriculo">Meu currículo</a>
     </main>
+    <footer>
+      <p>Versão <%= version %></p>
+    </footer>
   </body>
 </html>
